@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Tech-Stack">Tech-Stack</a></li>
+          <li><a href="#Research-Interests">Research-Interests</a></li>
+          <li><a href="#Publications">Publications</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/masabattula-teja-nikhil-408383209/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Tejanikhil-MSR" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <!-- <a href="https://scholar.google.com/citations?user=p4VBKRcAAAAJ&hl=en" target="_blank", rel="noopener noreferrer" style="margin-top: 100px;">
+          <i class="material-icons" style="font-size:25px">school</i>
+        </a> -->
+      </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Masabattula Teja Nikhil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Masabattula Teja Nikhil</h1>
+        <p class="section__text__p2">
+          I'm Teja Nikhil, a computer science entusiast currently pursuing MS in Computer science at IIT Indore. 
+          My personal interest and learning aligns with Statistical Machine Learning, Building explainability for LLMs, Data Processing, 
+          and Multi GPU Training Optimization and various tools related to these.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV >>
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#Contact'">
+            Contact Info >>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="../photo.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Area of Interest</h3>
+              <p>Optimizing DNN Training<br />Deep neural networks</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MS - Computer Science<br />B.Tech - Artificial Intelligence</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="justified-text"> 
+              The world of high-speed data flow transfers—whether in AI, networks, or operating systems—has always fascinated me, fueling my curiosity to uncover the mechanics behind the scenes. I am deeply passionate about continuous learning and Artificial Intelligence, with a focus on optimizing multi-GPU training workloads at all levels: architectural, GPU connectivity, and network efficiency. My interests include Large Language Models (LLMs) and their transformative applications. Currently, I am working on multi-GPU training optimization at the topological level, specifically focusing on GPU connectivity to enhance the performance of large-scale AI systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="Publications">
+      <p class="section__text__p1">Dive into my</p>
+      <h1 class="title">Publications</h1>
+      <div class="publications-list">
+        <div class="publication-item">
+          <h3><a href="https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs219400" target="_blank",rel="noopener noreferrer">DynaGlaucoDetect: Leveraging Dyna-Q learning for glaucoma detection using Reinforcement Learning</a></h3>
+          <p><strong>Authors:</strong> Masabattula Teja Nikhil, Kavya Duvvuri, Kanisettypalli Harshitha</p>
+          <p><strong>Journal:</strong> Intelligent and Fuzzy Systems</p>
+          <p><strong>Abstract:</strong> Another brief description of the publication's purpose and findings. Keep it concise but meaningful.</p>
+        </div>
+        <div class="publication-item">
+          <h3><a href="https://www.sciencedirect.com/science/article/pii/S1877050924008391" target="_blank",rel="noopener noreferrer">Unravelling stress levels in continuous speech through optimal feature selection and deep learning</a></h3>
+          <p><strong>Authors:</strong> Masabattula Teja Nikhil, Mutyala Sai Sri Siddhartha, Boda Venkata Nikith</p>
+          <p><strong>Journal:</strong> ICMLDE </p>
+          <p><strong>Abstract:</strong> Another brief description of the publication's purpose and findings. Keep it concise but meaningful.</p>
+        </div>
+        <div class="publication-item">
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/10205586/?casa_token=Z9pR27y7bXQAAAAA:8y_XqK6b9x3t-FFJMs-a_Ws_zONMX-Xqj34WiEdWY0FFgboIkyXihB_4gbJ5Fu53HLX2Xv0TsZKj" target="_blank", rel="noopener noreferrer">Classification of Diabetic Retinopathy Using Image Pre-processing Techniques</a></h3>
+            <p><strong>Authors: </strong> Masabattula Teja Nikhil, Kavya Duvvuri, Kanisettipally Harshitha</p>
+            <p><strong>Conference: </strong>3rd International Conference (IEEE Published)</p>
+            <p><strong>Abstract:</strong> A brief description of the publication's purpose and findings. This should be a short overview of the work.</p>
+        </div>
+        <!-- Example Publication 2 -->
+        <div class="publication-item">
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/10205586/?casa_token=Z9pR27y7bXQAAAAA:8y_XqK6b9x3t-FFJMs-a_Ws_zONMX-Xqj34WiEdWY0FFgboIkyXihB_4gbJ5Fu53HLX2Xv0TsZKj" target="_blank",rel="noopener noreferrer">Revealing black box DNN models using Explainable AI Framework (LIME)</a></h3>
+            <p><strong>Authors:</strong> Masabattula Teja Nikhil, Mutyala Sai Sri Siddhartha, Boda Venkata Nikith</p>
+            <p><strong>Conference:</strong> 6th International Conference</p>
+            <p><strong>Abstract:</strong> Another brief description of the publication's purpose and findings. Keep it concise but meaningful.</p>
+        </div>
+        <!-- Add more publications as needed -->
+        <button class="btn btn-color-3" onclick="window.open('https://scholar.google.com/citations?user=p4VBKRcAAAAJ&hl=en', '_blank')">
+          More Publications >>
+        </button>
+      </div>
+  </section>
+
+  <section id="Contact">
+    <div class="contact-container">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xpwzndlg" method="post">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-4">Send Message</button>
+        </form>
+        
+      </div>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:ms2404101014@iiti.ac.in">ms2404101014@iiti.ac.in</a></p>
+        <p><strong>Phone:</strong> +91 9100509762</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/masabattula-teja-nikhil-408383209/" target="_blank", rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Tejanikhil-MSR" target="_blank", rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=p4VBKRcAAAAJ&hl=en" target="_blank", rel="noopener noreferrer"><i class="material-icons" style="font-size:25px">school</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
